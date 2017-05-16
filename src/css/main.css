@@ -8,11 +8,49 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+
+
+.first {
     color: #222;
-    font-size: 1em;
+    font-size: 13vh;
     line-height: 1.4;
+    color: red;
+    position: fixed;
+    margin-top: 0;
+    float:top;
+    padding: 0;
+    color:black; 
+    width: 100%;
+
+    font-size: 90%;
+
 }
+.first h1{
+    font-size: 70px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.first p {
+    text-align: right;
+    font-size: 50px;
+
+}
+
+
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -23,7 +61,7 @@ html {
  */
 
 ::selection {
-    background: #b3d4fc;
+    background: red;
     text-shadow: none;
 }
 
@@ -38,6 +76,7 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+    color:pink;
 }
 
 /*
@@ -63,6 +102,7 @@ fieldset {
     border: 0;
     margin: 0;
     padding: 0;
+    color: black;
 }
 
 /*
