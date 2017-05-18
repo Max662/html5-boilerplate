@@ -1,3 +1,47 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -12,6 +56,8 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+
+
 }
 
 /*
@@ -87,55 +133,651 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body{
-    font-family: 'Titillium Web', sans-serif;
-    margin:0;
+
+/*
+    Global
+*/
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
 }
 
-.first {
-    color: #222;
-    font-size: 13vh;
-    line-height: 1.4;
-    color: red;
-    position: fixed;
-    margin-top: 0;
-    float:top;
-    padding: 0;
-    color:black; 
-    width: 100%;
 
-    font-size: 90%;
 
-}
-.first h1{
-    position: fixed;
-    font-size: 190px;
-    right: 250px;
-    top:60px;
-    color: white;
-}
-
-.first p {
-    position: fixed;
+.video1 h3 {
     font-size: 80px;
-    right: 140px;
-    top:300px;
-    color: white;
+    text-align: center;
+
 
 }
 
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 2;
+    box-sizing: border-box;
+    margin: 1rem 0 0;
+    border: 2px solid deeppink;
+    padding: 0.75rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: white;
+    background: deeppink;
+    text-transform: lowercase;
+    transition: all 0.125s linear;
+}
+
+button:hover {
+    background: #444;
+    border-color: #444;
+}
+
+button:focus {
+    outline: 0;
+}
 
 img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    position: fixed;
     width: 100%;
+    height: 500px;
+}
+
+/*
+    Section
+*/
+section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    width: 90%;
+    display: block;
+    overflow: auto;
+}
+
+/*
+    Sidebar
+*/
+aside {
+    width: 30%;
+    float: left;
+    display: block;
+
+}
+
+aside h4 {
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+aside p {
+    margin-bottom: 1rem;
+    max-width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+aside input[type="submit"] {
+    max-width: 100%;
+    float: none;
+}
+
+/*
+    Article
+*/
+article {
+    width: 70%;
+    float: left;
+    display: block;
+    letter-spacing: 20px;
+    font-family: 'Titillium Web', sans-serif;
+
+
+}
+
+article p {
+    font-size: 30px;
+    max-width: 90%;
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    height: 20px;
+    width: 700px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+article h3 {
+    max-width: 90%;
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+article h3:after {
+    content: '';
+    background: black;
+    width: 3rem;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+aside.img {
+    height: 200px;
+    width: 100px;
+    filter: grayscale(100%)
+
+
+}
+
+
+section.nasal {
+    padding-left:0px;
+}
+
+
+.nasal img {
+
+    height: 300px;
+    width: 380px;
+}
+
+.nasal p {
+    float: left;
+    width: 700px;
+    padding-right: 50px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 40px;
+
+
+
+
+}
+
+.nasal h4 {
+
+    font-size: 30px;
 }
 
 
 
+section.viedo { 
+
+    background: red;
+ }
+
+
+
+section.
+
+/*
+    Inputs
+*/
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 2;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1rem 0 0;
+    border: 2px solid #ccc;
+    padding: 0.75rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #444;
+    transition: all 0.125s linear;
+}
+
+input[type="submit"] {
+    border-color: deeppink;
+    background-color: deeppink;
+    cursor: pointer;
+    color: white;
+    text-transform: lowercase;
+    max-width: 32%;
+    float: right;
+}
+
+input[type="submit"]:hover {
+    border-color: #444;
+    background-color: #444;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="text"]:focus,
+input[type="email"]:focus {
+    color: #444;
+    border-color: #444;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #444;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #444;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #ccc;
+}
+
+/*
+    Typography
+*/
+h1 {
+    font-weight: 400;
+    font-size: 10vh;
+    line-height: 4vh;
+    letter-spacing: 3px;
+    color: ivory;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+h2 {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 10px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+h3 {
+    font-family: 'Arvo', serif;
+    font-size: 4.8rem;
+    line-height: 5.2rem;
+    margin: 0 0 2rem;
+    font-weight: 500;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 0 0 1.25rem;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+h5 {
+    margin: 0 0 10px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+h6 {
+    margin: 0 0 10px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+a {
+    font-weight: 500;
+    text-decoration: underline;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+a:hover {
+    color: deeppink;
+}
+
+p {
+    margin: 0 0 2rem;
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    max-width: 95%;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+blockquote {
+    margin: 0 0 10px;
+    float: right;
+    width: 60%;
+    padding: 0 0 0 1rem;
+    margin: 0 0 1rem 1rem;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+blockquote p {
+    font-family: 'Arvo', serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+blockquote p:before {
+    content: '"';
+}
+
+blockquote p:after {
+    content: '"';
+}
+
+blockquote cite {
+    float: right;
+    font-size: 0.7rem;
+    font-weight: 400;
+    font-style: italic;
+    color: deeppink;
+}
+
+blockquote cite:before {
+    content: '–';
+    margin-right: 5px;
+}
+
+/*
+    Header
+*/
+header {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background: rgb(255,0,132) url('../img/image.png');
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,0,132,1) 0%, rgba(255,0,132,1) 100%) url('../img/image.png');
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,0,132,1) 0%,rgba(255,0,132,1) 100%) url('../img/image.png');
+    background: radial-gradient(ellipse at center, rgba(255,0,132,1) 0%,rgba(255,0,132,1) 100%) url('../img/image.png');
+    background-blend-mode: multiply;
+}
+
+header h1 {
+    font-family: 'Titillium Web', sans-serif;
+
+
+}
+
+header h1 span:before {
+    content: '<';
+    margin-right: 3px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+header h1 span:after {
+    content: '/>';
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+/*
+    Navigation
+*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    transition: all 0.5s linear;
+}
+
+nav.active {
+    background: rgb(255,0,132) url('../img/image.png');
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,0,132,1) 0%, rgba(255,0,132,1) 100%) url('../img/image.png');
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,0,132,1) 0%,rgba(255,0,132,1) 100%) url('../img/image.png');
+    background: radial-gradient(ellipse at center, rgba(255,0,132,1) 0%,rgba(255,0,132,1) 100%) url('../img/image.png');
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+
+nav.active .menu-button {
+    color: ivory !important;
+}
+
+nav .menu-button {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: ivory;
+    font-size: 2.2rem;
+    line-height: 0;
+    vertical-align: top;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav li a {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    color: ivory;
+    font-weight: 400;
+    font-size: 3vh;
+    line-height: 4vh;
+    letter-spacing: 4px;
+    text-transform: lowercase;
+}
+
+nav li a:hover {
+    color: ivory;
+    border-bottom: 2px solid ivory;
+}
+
+/*
+    Video
+*/
+
+header .video {
+    width: 0
+} 
+
+
+section.video1 {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+section.video1 video {
+    width: 100%;
+}
+
+section.video1 h3 {
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    font-weight: 400;
+    font-size: 25vh;
+    line-height: 0;
+    letter-spacing: 2px;
+    color: ivory;
+}
+section.video1 h2 {
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 65%;
+    font-weight: 400;
+    font-size: 5vh;
+    line-height: 0;
+    letter-spacing: 2px;
+    color: ivory;
+   
+}
+
+section.video h3:before {
+    content: '<';
+    margin-right: 3px;
+}
+
+section.video h3:after {
+    content: '/>';
+}
+
+section.video button {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    margin-left: -56px;
+    font-family: 'Roboto Mono', monospace;
+    z-index: 9998;
+}
+
+/*
+    Grid
+*/
+section.grid {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+section.grid div.grid-item {
+    width: 32%;
+    height: auto;
+    display: block;
+}
+
+section.grid div.grid-item img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+/*
+    Gallery
+*/
+section.maca {
+    display: inline-block;
+    width: 380px;
+    height: 500px;
+    margin:20px; 
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+
+    }
+
+
+section.ging {
+    display: inline-block;
+    width: 380px;
+    height: 500px;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+
+
+  }
+
+  section.cola {
+
+    display: inline-block;
+    width: 380px;
+    height: 500px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+
+
+  }
+
+section.maca h3{
+    font-color: 10px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+
+
+.maca p{
+   
+    margin: 20px;
+    font-family: 'Titillium Web', sans-seri
+
+
+ }
+ .ging img {
+    height: 250px;
+    width: 300px;
+    font-family: 'Titillium Web', sans-serif;
+
+
+ }
+
+.maca img {
+    height: 250px;
+    width: 300px;
+    font-family: 'Titillium Web', sans-serif;
+
+ }
+
+.cola img {
+    height: 250px;
+    width: 300px;
+
+ }
+
+
+ .ging p {
+        margin: 20px;
+        font-family: 'Titillium Web', sans-serif;
+
+
+
+ }
+.cola p {
+    margin: 20px;
+    font-family: 'Titillium Web', sans-serif;
+
+
+ }
 
 
 
@@ -147,7 +789,136 @@ img {
 
 
 
+.benefits h1 {
 
+
+display: inline-block;
+
+font-size: 50px;
+font-family: 'Titillium Web', sans-serif;
+margin:30px;
+    color:red;
+
+}
+
+
+section.end {
+
+    border: 0;
+    max-width: 100%;
+
+
+
+}
+
+section.end video {
+    max-width: 100%;
+
+
+
+}
+
+
+
+/*
+    Footer
+*/
+footer {
+    float: left;
+    clear: both;
+    width: 100%;
+    padding-bottom: 2rem;
+    background-color: #666;
+    color: white;
+}
+
+footer .inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer .inner h5 {
+    margin: 3rem 0 0;
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+footer .inner ul {
+    margin: 0 0 3rem;
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    padding-left: 1rem;
+    list-style: disc;
+}
+
+footer .inner p {
+    font-weight: 400;
+    color: white;
+}
+
+/*
+    Scroll to Top
+*/
+button.scroll-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    background: deeppink;
+    border-color: deeppink;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 2.5%;
+    transform: rotate(-90deg);
+}
+button.scroll-to-top:hover {
+    background: #444;
+    border-color: #444;
+}
+
+/*
+    Mobile
+*/
+@media only screen and (max-width: 768px) {
+    aside,
+    section.grid,
+    section.video button {
+        display: none;
+    }
+    h1 {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    h3 {
+        font-size: 3rem;
+        line-height: 3.4rem;
+        margin-top: 2rem;
+    }
+    nav li a {
+        border-bottom: 2px solid ivory;
+    }
+    article {
+        width: 100%;
+        clear: both;
+    }
+    input[type="submit"] {
+        max-width: 100% !important;
+    }
+    section {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    blockquote {
+        width: 100%;
+        text-align: right;
+    }
+    section.video h3 {
+        top: 35%;
+    }
+}
 
 /* ==========================================================================
    Helper classes
